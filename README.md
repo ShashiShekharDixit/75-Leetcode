@@ -56,12 +56,12 @@ Each folder contains:
 
 Problem Statement 💡: Description and link to the LeetCode problem.
 Approach 🔍: Detailed explanation of the solution approach.
-Code 👨‍💻: Clean, well-documented code in Python (or your preferred language).
+Code 👨‍💻: Clean, well-documented code in C++ (or your preferred language).
 Complexity Analysis 🕒: Time and space complexity breakdown.
 🚀 Daily Progress Tracker
 Keep track of the problems solved daily as part of the LeetCode-75 challenge:
 
-                    Date	Problem Name	LeetCode Link
+                    Date	    Problem Name	LeetCode Link
                     YYYY-MM-DD	Problem Name	Problem Link
                     YYYY-MM-DD	Problem Name	Problem Link
                     ...	...	...

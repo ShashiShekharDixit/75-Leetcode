@@ -1,28 +1,47 @@
-class Solution {
-public:
-    vector<int> asteroidCollision(vector<int>& asteroids) {
-        stack<int> stack;
-        for(int a : asteroids){
-            if(a > 0) {
-                stack.push(a);
-            } else {
-                while(!stack.empty() && stack.top() > 0 && stack.top() < -a) {
-                    stack.pop();
-                }
-                if(stack.empty() || stack.top() < 0) {
-                    stack.push(a);
-                }
-                if(!stack.empty() && stack.top() == -a) {
-                    stack.pop();
-                }
+#include <iostream>
+#include <vector>
+#include <stack>
+
+using namespace std;
+
+vector<int> asteroidCollision(vector<int>& asteroids) {
+    stack<int> st;
+    
+    for (int asteroid : asteroids) {
+        bool destroyed = false;
+        while (!st.empty() && asteroid < 0 && st.top() > 0) {
+            if (st.top() < -asteroid) {
+                st.pop();
+                continue;
+            } else if (st.top() == -asteroid) {
+                st.pop();
             }
+            destroyed = true;
+            break;
         }
-        vector<int> res(stack.size());
-        int i = stack.size() - 1;
-        while(!stack.empty()) {
-            res[i--] = stack.top();
-            stack.pop();
+        if (!destroyed) {
+            st.push(asteroid);
         }
-        return res;
     }
-};
+    
+    vector<int> result(st.size());
+    for (int i = st.size() - 1; i >= 0; --i) {
+        result[i] = st.top();
+        st.pop();
+    }
+    
+    return result;
+}
+
+int main() {
+    vector<int> asteroids = {5, 10, -5};
+    vector<int> result = asteroidCollision(asteroids);
+    
+    cout << "Remaining asteroids: ";
+    for (int ast : result) {
+        cout << ast << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}

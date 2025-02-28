@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <set>
+
+using namespace std;
+
 class Solution {
 public:
     vector<vector<int>> findDifference(vector<int>& nums1, vector<int>& nums2) 
@@ -38,3 +44,24 @@ public:
         return ans;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> nums1 = {1, 2, 3, 3};
+    vector<int> nums2 = {1, 1, 2, 2};
+    vector<vector<int>> result = sol.findDifference(nums1, nums2);
+    
+    cout << "Unique in nums1: ";
+    for (int num : result[0]) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    cout << "Unique in nums2: ";
+    for (int num : result[1]) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}

@@ -1,13 +1,20 @@
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+#include <unordered_set>
+
+using namespace std;
+
 class Solution {
 public:
     void dfs(string node, string& dest, unordered_map<string, unordered_map<string, double>>& gr, unordered_set<string>& vis, double& ans, double temp) {
-        if(vis.find(node) != vis.end()) return;
+        if (vis.find(node) != vis.end()) return;
         vis.insert(node);
-        if(node == dest){
+        if (node == dest) {
             ans = temp;
             return;
         }
-        for(auto ne : gr[node]){
+        for (auto ne : gr[node]) {
             dfs(ne.first, dest, gr, vis, ans, temp * ne.second);
         }
     }
@@ -32,7 +39,7 @@ public:
                 finalAns.push_back(-1.0);
             } else {
                 unordered_set<string> vis;
-                double ans = -1, temp=1.0;
+                double ans = -1, temp = 1.0;
                 dfs(dividend, divisor, gr, vis, ans, temp);
                 finalAns.push_back(ans);
             }
@@ -40,3 +47,19 @@ public:
         return finalAns;
     }
 };
+
+int main() {
+    Solution sol;
+    vector<vector<string>> equations = {{"a", "b"}, {"b", "c"}};
+    vector<double> values = {2.0, 3.0};
+    vector<vector<string>> queries = {{"a", "c"}, {"b", "a"}, {"a", "e"}, {"a", "a"}, {"x", "x"}};
+    vector<double> results = sol.calcEquation(equations, values, queries);
+    
+    cout << "Results: ";
+    for (double res : results) {
+        cout << res << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}

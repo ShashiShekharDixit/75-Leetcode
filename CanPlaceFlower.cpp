@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n) {
@@ -13,3 +18,11 @@ public:
         return n <= 0;        
     }
 };
+
+int main() {
+    Solution sol;
+    vector<int> flowerbed = {1, 0, 0, 0, 1};
+    int n = 1;
+    cout << "Can place flowers: " << (sol.canPlaceFlowers(flowerbed, n) ? "True" : "False") << endl;
+    return 0;
+}

@@ -1,3 +1,8 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 class Solution {
 public:
     string mergeAlternately(string word1, string word2) {
@@ -15,3 +20,15 @@ public:
         return result;
     }
 };
+
+int main() {
+    string word1 = "abc";
+    string word2 = "pqrxyz";
+
+    Solution solution;
+    string mergedString = solution.mergeAlternately(word1, word2);
+
+    cout << "Merged String: " << mergedString << endl;
+
+    return 0;
+}

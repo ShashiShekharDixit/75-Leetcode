@@ -1,4 +1,7 @@
-class TrieNode {
+#include <iostream>
+using namespace std;
+
+class TrieNode { 
 public:
     TrieNode *child[26];
     bool isWord;
@@ -7,6 +10,7 @@ public:
         for (auto &a : child) a = nullptr;
     }
 };
+
 class Trie {
     TrieNode* root;
 public:
@@ -29,10 +33,28 @@ public:
             if (!p->child[i]) return false;
             p = p->child[i];
         }
-        if (prefix==false) return p->isWord;
+        if (prefix == false) return p->isWord;
         return true;
     }
     bool startsWith(string prefix) {
         return search(prefix, true);
     }
 };
+
+int main() {
+    Trie trie;
+    trie.insert("apple");
+    trie.insert("app");
+    trie.insert("banana");
+
+    cout << (trie.search("apple") ? "Found\n" : "Not Found\n");
+    cout << (trie.search("app") ? "Found\n" : "Not Found\n");
+    cout << (trie.search("banana") ? "Found\n" : "Not Found\n");
+    cout << (trie.search("ban") ? "Found\n" : "Not Found\n");
+
+    cout << (trie.startsWith("ap") ? "Yes\n" : "No\n");
+    cout << (trie.startsWith("ban") ? "Yes\n" : "No\n");
+    cout << (trie.startsWith("bat") ? "Yes\n" : "No\n");
+
+    return 0;
+}

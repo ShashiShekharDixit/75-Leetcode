@@ -1,3 +1,9 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+
+using namespace std;
+
 class Solution {
 public:
     string reverseVowels(string s) {
@@ -21,3 +27,14 @@ public:
         return s;
     }
 };
+
+int main() {
+    Solution sol;
+    string s = "hello";
+    
+    string result = sol.reverseVowels(s);
+    
+    cout << "Reversed vowels string: " << result << endl; 
+
+    return 0;
+}

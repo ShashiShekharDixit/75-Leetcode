@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 class Solution {
 public:
     int tribonacci(int n) {
@@ -13,3 +17,14 @@ public:
         return t2;
     }
 };
+int main() {
+    Solution solution;
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+
+    int result = solution.tribonacci(n);
+    cout << "The " << n << "th Tribonacci number is: " << result << endl;
+
+    return 0;
+}

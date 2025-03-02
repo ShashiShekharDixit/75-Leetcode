@@ -1,85 +1,107 @@
-💡 LeetCode-75 Challenge 💡
-Welcome to my LeetCode-75 Challenge repository! This project is dedicated to solving the LeetCode-75 curated list of essential coding problems designed to improve your algorithmic skills. It covers the must-know topics, helping you build a solid foundation for coding interviews.
+# 💡 LeetCode-75 Challenge 🚀
 
-🎯 Objective
-The LeetCode-75 challenge is a collection of 75 carefully selected problems that focus on the core concepts of Data Structures and Algorithms (DSA). Completing these problems will strengthen your understanding of fundamental techniques and boost your problem-solving skills for coding interviews.
+Welcome to the **LeetCode-75 Challenge** repository! This project is dedicated to solving **LeetCode's curated list of 75 essential coding problems**, designed to sharpen your problem-solving skills and boost your **coding interview preparation**. 🎯
 
-🧠 Topics Covered
-This repository includes problems from various important topics, such as:
+---
 
-Arrays
-📊 Problems involving 1D/2D arrays, subarrays, and matrix manipulations.
+## 🎯 Objective
+The **LeetCode-75 Challenge** consists of **75 carefully selected problems** that focus on **core Data Structures & Algorithms (DSA)**. By solving these, you'll:
+✅ Strengthen your **algorithmic thinking**.  
+✅ Master **essential DSA concepts**.  
+✅ Improve your **coding efficiency** for technical interviews.  
+✅ Enhance your **time and space complexity optimization** skills.
 
-Strings
-✍️ Challenges around string manipulation, pattern matching, and parsing.
+---
 
-Linked Lists
-🔗 Linked list problems including traversal, reversal, and cycle detection.
+## 🧠 Topics Covered
+This repository covers a wide range of **fundamental** DSA topics, including:
 
-Trees
-🌳 Binary Trees, Binary Search Trees, and traversal algorithms (DFS/BFS).
+### 🔢 Arrays
+📊 Solve problems involving **1D/2D arrays**, subarrays, and matrix manipulations.
 
-Graphs
-🔍 Graph problems covering traversal, shortest paths, and cycle detection.
+### 🔠 Strings
+✍️ Master **string manipulation**, pattern matching, and parsing techniques.
 
-Dynamic Programming
-🧮 Essential DP problems covering optimization, memoization, and tabulation.
+### 🔗 Linked Lists
+🔄 Learn linked list operations: **traversal, reversal, and cycle detection**.
 
-Greedy Algorithms
-💡 Optimal solutions for problems that can be solved using greedy methods.
+### 🌳 Trees
+🌿 Understand **Binary Trees, BSTs**, and traversal techniques (**DFS/BFS**).
 
-Recursion
-🔄 Problems requiring recursive approaches, backtracking, and divide & conquer.
+### 🔍 Graphs
+🛤️ Solve problems on **graph traversal, shortest paths, and cycle detection**.
 
-🏆 Achievements
-Solved 75 handpicked LeetCode questions covering core DSA concepts.
-Focused on optimizing solutions for both time and space complexity.
-Enhanced problem-solving speed and coding efficiency by tackling daily challenges.
-📂 Repository Structure
-                    
+### 🧮 Dynamic Programming
+📝 Master **optimization techniques** using memoization and tabulation.
+
+### 💡 Greedy Algorithms
+⚡ Learn **optimal greedy strategies** for solving various problems.
+
+### 🔄 Recursion & Backtracking
+🔁 Solve complex problems using **recursive approaches and backtracking**.
+
+---
+
+## 🏆 Achievements
+🎯 **Completed 75 handpicked LeetCode problems** covering core DSA concepts.  
+📈 **Optimized solutions** for both **time & space complexity**.  
+🚀 **Improved problem-solving speed** by solving challenges daily.  
+
+---
+
+## 📂 Repository Structure
+```
 📁 LeetCode-75-Challenge/
 │
 ├── 📂 Arrays/
-│   └── ArrayProblem1.md
+│   ├── Problem1.cpp
+│   ├── Problem2.cpp
+│   └── ...
 │
 ├── 📂 Strings/
-│   └── StringProblem1.md
+│   ├── Problem1.cpp
+│   ├── Problem2.cpp
+│   └── ...
 │
 ├── 📂 LinkedLists/
-│   └── LinkedListProblem1.md
+│   ├── Problem1.cpp
+│   └── ...
 │
 ├── 📂 Trees/
-│   └── TreeProblem1.md
+│   ├── Problem1.cpp
+│   └── ...
 │
-└── ...
+└── 📂 Graphs/
+    ├── Problem1.cpp
+    └── ...
+```
 Each folder contains:
+✅ **Problem Statement**: Description & LeetCode problem link.  
+✅ **Approach**: Step-by-step explanation of the solution.  
+✅ **Code**: Clean, well-documented **C++** implementations.  
+✅ **Complexity Analysis**: Breakdown of time & space complexity.  
 
-Problem Statement 💡: Description and link to the LeetCode problem.
-Approach 🔍: Detailed explanation of the solution approach.
-Code 👨‍💻: Clean, well-documented code in C++ (or your preferred language).
-Complexity Analysis 🕒: Time and space complexity breakdown.
-🚀 Daily Progress Tracker
-Keep track of the problems solved daily as part of the LeetCode-75 challenge:
+## 💻 How to Use This Repository
+This repository is a great **resource for interview preparation**:
 
-                    Date	    Problem Name	LeetCode Link
-                    YYYY-MM-DD	Problem Name	Problem Link
-                    YYYY-MM-DD	Problem Name	Problem Link
-                    ...	...	...
-💻 How to Use This Repository
-This repository serves as a resource for anyone preparing for technical coding interviews or looking to improve their problem-solving skills.
+👶 **Beginner Level**: Start with **arrays & strings** to build confidence.  
+🧑‍💻 **Intermediate Level**: Focus on **trees & dynamic programming** problems.  
+👨‍🎓 **Advanced Level**: Challenge yourself with **graphs & recursion** problems.  
 
-Beginner Level: Start from basic array and string problems to build confidence.
-Intermediate Level: Tackle medium-difficulty tree and dynamic programming problems.
-Advanced Level: Focus on complex graph and recursion problems to push your limits.
-🤝 Contributions
-Contributions are welcome! Whether you’d like to suggest an alternative solution, add code in a different programming language, or improve documentation, feel free to fork this repository and submit a pull request.
+---
 
-How to Contribute:
-🍴 Fork the repository.
-🌿 Create a new branch for your contributions.
-🛠️ Add your solutions or improvements.
-🔁 Open a pull request and describe your changes.
-📜 License
-This repository is licensed under the MIT License, meaning you can use the code and contribute freely. See the LICENSE file for more details.
+## 🤝 Contributions
+Contributions are **highly encouraged**! If you’d like to suggest an **alternative solution**, add code in another programming language, or improve documentation, **feel free to contribute**. 🎉
 
-Let's crack those coding interviews! 💪🚀
+### How to Contribute:
+1. 🍴 **Fork** the repository.
+2. 🌿 **Create a new branch** for your contributions.
+3. 🛠️ **Add your solutions or improvements**.
+4. 🔁 **Open a pull request** and describe your changes.
+
+---
+
+## 📜 License
+This repository is **licensed under the MIT License**, meaning you can **use, share, and contribute freely**. See the **LICENSE file** for details.
+
+---

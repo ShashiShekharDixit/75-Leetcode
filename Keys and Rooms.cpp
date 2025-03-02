@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
 class Solution {
 public:
     bool canVisitAllRooms(vector<vector<int>>& rooms) {
@@ -7,7 +12,7 @@ public:
         int csize = 0;
         int sum = 0;
         unordered_map<int, int> accessibleRooms;
-        for(auto room : rooms[0]) {
+        for (auto room : rooms[0]) {
             accessibleRooms[room] = 1;
             sum += room;
             csize++;
@@ -27,3 +32,15 @@ public:
         return ((goal != sum) ? false : true);
     }
 };
+
+int main() {
+    Solution solution;
+    
+    vector<vector<int>> rooms1 = {{1}, {2}, {3}, {}};
+    vector<vector<int>> rooms2 = {{1, 3}, {3, 0, 1}, {2}, {0}};
+
+    cout << (solution.canVisitAllRooms(rooms1) ? "True\n" : "False\n");
+    cout << (solution.canVisitAllRooms(rooms2) ? "True\n" : "False\n");
+
+    return 0;
+}

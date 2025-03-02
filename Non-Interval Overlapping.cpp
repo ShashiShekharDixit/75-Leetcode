@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
 class Solution {
 public:
     int eraseOverlapIntervals(vector<vector<int>>& intervals) {
@@ -15,3 +21,13 @@ public:
         return count;
     }
 };
+
+int main() {
+    Solution solution;
+    vector<vector<int>> intervals = {{1, 3}, {2, 4}, {3, 5}, {4, 6}};
+
+    int result = solution.eraseOverlapIntervals(intervals);
+    cout << "Minimum number of intervals to remove: " << result << endl;
+
+    return 0;
+}
